@@ -1,0 +1,110 @@
+.cv-modal-input-holder {
+  width: 100%;
+  border: 0.0625rem solid #dadce0;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  padding: 8px 0;
+  margin-bottom: 18px;
+}
+.cv-modal-input-holder:hover {
+  cursor: pointer;
+  background-color: #e6e7ff;
+}
+.cv-modal-input-holder:last-child {
+    margin-bottom: 28px;
+}
+.cv-modal-input-inner-holder {
+  position: relative;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  height: 3.5rem;
+}
+.cv-modal-input-icon-holder {
+  width: 48px;
+  height: 48px;
+  background-color: #3d5af1;
+  border-radius: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 20px;
+}
+.cv-modal-input-icon {
+  position: relative;
+  z-index: 2;
+  font-size: 24px;
+  border-radius: 50%;
+  color: #fff;
+}
+.cv-modal-input-context-holder {
+  width: 70%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  margin-left: 14px;
+}
+.cv-modal-input-context-title {
+  color: rgba(0, 0, 0, 0.87);
+  font-family: "Airbnb Cereal App Medium", "Gilroy", sans-serif;
+  margin-bottom: 2.5px;
+  max-height: 20px;
+  overflow: hidden;
+}
+.cv-modal-input-context-duration {
+  font-family: "Airbnb Cereal App Medium", "Gilroy", sans-serif;
+  font-size: 12px;
+  color: #5f6368;
+}
+.cv-modal-input-control {
+  position: absolute;
+  right: 16px;
+  transform: rotate(90deg);
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cv-modal-input-control:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.cv-modal-input-control:active {
+    background-color: rgba(0,0,0,.3);
+}
+.cv-modal-input-control-action-box {
+  position: absolute;
+  transform: rotate(-90deg);
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 7px 0;
+  right: -140%;
+  top: 50%;
+  max-width: 280px !important;
+  box-shadow: 0 2px 1px -1px rgba(0,0,0,0.2), 0 1px 1px 0 rgba(0,0,0,0.141), 0 1px 3px 0 rgba(0,0,0,0.122);
+
+}
+/* top50, right140 */
+.cv-modal-input-control-action-button {
+    font-size: 14px;
+    font-family: 'Airbnb Cereal App Medium', 'Gilroy', sans-serif;
+    padding: 7px 18px;
+}
+.cv-modal-input-control-action-button:hover {
+    background-color: rgba(0,0,0,.06);
+}
+.cv-modal-input-control-action-button:active {
+    background-color: rgba(0,0,0,.12);
+}
+.modal-heading {
+    font-family: 'Airbnb Cereal App Bold', 'Gilroy', sans-serif;
+}
+.modal-paragraph {
+    font-size: 14px;
+    font-family: 'Airbnb Cereal App Medium', 'Gilroy', sans-serif;
+    margin-bottom: 24px;
+}
+.modal-control-group {
+    text-align: right;
+}

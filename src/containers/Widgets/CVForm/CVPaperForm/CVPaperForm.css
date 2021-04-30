@@ -1,0 +1,18 @@
+  .cv-form-section-heading {
+    font-size: 22px;
+    font-family: "Airbnb Cereal App Bold", "Gilroy", sans-serif;
+  }
+  .cv-form {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+    max-width: 100%;
+    flex-wrap: wrap;
+  }
+  .cv-form-section-description {
+    font-size: 14px;
+    font-family: "Airbnb Cereal App Light", "Gilroy", sans-serif;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #98a1b3;
+}

@@ -1,0 +1,14 @@
+.backdrop {
+    width: 45%;
+    height: 100%;
+    position: fixed;
+    z-index: 101;
+    top: 0;
+    left: 15%;
+    transition: transform .1s ease-out;
+}
+@media screen and (max-width: 966px) {
+    .backdrop {
+        width: 100%;
+    }
+}

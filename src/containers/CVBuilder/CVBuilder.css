@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+.cv-builder-root {
+    display: flex;
+}
+.cv-builder {
+    width: 45%;
+    margin-left: 15%;
+    height: 100vh;
+    background-color: #fff;
+    padding: 20px;
+    position: relative;
+    padding-top: 60px;
+}
+.commands-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 15%;
+    border-right: 1px solid #888888;
+    padding: 10px;
+    overflow: auto;
+}
+@media screen and (max-width: 966px) {
+    .cv-builder {
+        width: 100%;
+    }
+}
+.cv-form {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    max-width: 100%;
+    flex-wrap: wrap;
+}
+.cv-form-section-heading {
+    font-size: 22px;
+    font-family: 'Airbnb Cereal App Bold', 'Gilroy', sans-serif;
+}
+.cv-form-group {
+    margin: 22.5px 0;
+    position: relative;
+    background-color: #f2f5fc;
+    border-radius: 4px;
+    min-width: 47.5%;
+}
+.cv-form-input {
+    border: 0;
+    width: 100%;
+    padding: 11px 16px;
+    background-color: transparent;
+    position: relative;
+    z-index: 2;
+
+}
+.cv-form-input:focus {
+    outline: 0;
+}
+.cv-form-input:placeholder-shown + .cv-form-input-label {
+    color: #98a1b3;
+}
+.cv-form-input-label,
+.cv-form-input:focus + .cv-form-input-label {
+    color: #3d5af1;
+}
+.cv-form-input-label span {
+    display: inline-block;
+    min-width: 5px;
+    color: inherit;
+    will-change: transform;
+    transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55), font-size 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.cv-form-input:placeholder-shown + .cv-form-input-label span {
+    transform: translate(0, 0);
+}
+.cv-form-input-label span,
+.cv-form-input:focus + .cv-form-input-label span {
+    transform: translate(-16px, -38px);
+        font-size: 16px;
+}
+.cv-form-input{
+    font-family:'Airbnb Cereal App Light', 'Gilroy', sans-serif;
+    font-weight: bold;
+}
+.cv-form-input-label span {
+    font-family: 'Airbnb Cereal App Medium', 'Gilroy', sans-serif;
+}
+.cv-form-input,
+.cv-form-input:placeholder-shown .cv-form-input-label span {
+    font-size: 18px;
+}
+.cv-form-input-label {
+    position: absolute;
+    z-index: 1;
+    top: 12px;
+    left: 17px;
+}
+.cv-form-input::-webkit-input-placeholder {
+    color: transparent;
+}
+.mobile-preview-btn {
+    display: none;
+}
+.btn-change-template {
+    padding: 7px 18px;
+    font-size: 16px;
+    color: #fff;
+    font-family: 'Airbnb Cereal App Medium', 'Gilroy', sans-serif;
+    background-color: #3d5af1;
+    border-radius: 4px;
+
+}
+.btn-change-template:hover {
+    cursor: pointer;
+}
+@media screen and (max-width: 966px) {
+    .pdf-viewer-org {
+        display: none;
+    }
+    .btn-change-template {
+        display: none;
+    }
+    .mobile-preview-btn {
+        text-decoration: none;
+        width: 60px;
+        height: 60px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 36px;
+        color: #fff;
+        background-color: #3d5af1;
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        box-shadow: 0 3px 6px rgba(0,0,0,.16);
+        z-index: 100;
+        border-radius: 100%;
+        padding: 10px;
+    }
+    .mobile-preview-btn:hover {
+        cursor: pointer;
+        text-decoration: none;
+    }
+}
+.pdf-viewer-btns {
+    position: fixed;
+    bottom: 5%;
+    right: 14%;
+    z-index: 105;
+    display: flex;
+
+
+
+}
+.pdf-viewer-btns > * {
+    margin-right: 10px;
+}
+
+
+
+.sidebar {
+    padding: 5%;
+}
+
+.commands {
+    margin-top: 10px;
+}
+.command {
+    margin-bottom: 10px;
+}
+.h6 {
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 1.6;
+    letter-spacing: 0.0075em;
+    border: 1px solid #d3d3d3;
+    padding: 3px 9px;
+    border-radius: 4px;
+    box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);
+}
+.caption {
+
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 1.66;
+    letter-spacing: 0.03333em;
+    padding-left: 10px;
+
+}
+
+.button {
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1.75;
+    letter-spacing: 0.02857em;
+    text-transform: uppercase;
+    color: #458BFF;
+}

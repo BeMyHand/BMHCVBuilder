@@ -1,0 +1,7 @@
+.cv-form {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+    max-width: 100%;
+    flex-wrap: wrap;
+  }

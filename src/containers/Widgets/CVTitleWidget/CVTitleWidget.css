@@ -1,0 +1,78 @@
+.cv-title-container {
+    font-size: 18px;
+    display: block;
+    margin-bottom: 25px;
+}
+
+.cv-title-container .cv-file-icon {
+    font-size: 36px;
+    vertical-align: middle;
+    color: #3d5af1;
+    color: rgba(61, 90, 241, .9);
+}
+
+.cv-title-widget {
+    position: relative;
+    display: inline-block;
+    border: 2px solid transparent;
+    margin-left: 5px;
+    height: 36px;
+    width: 90%;
+    vertical-align: middle;
+}
+.cv-title-widget-in-action {
+
+}
+
+.cv-title-input-label,
+.cv-title-input {
+    height: 36px;
+    max-height: 36px;
+    padding-left: 7px;
+    padding-right: 7px;
+    font-family: 'Airbnb Cereal App Medium', 'Gilroy', sans-serif;
+    font-size: inherit;
+    color: #262b33;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+.cv-title-input-label {
+    position: relative;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transition: border-color .1s;
+    z-index: 10;
+    max-width: 100%;
+    color: transparent;
+    text-overflow: ellipsis;
+
+
+}
+.cv-title-input-label span {
+    max-height: 36px;
+    text-overflow: ellipsis;
+}
+.cv-title-input-label:hover {
+    border-color: #dee1ec;
+}
+.cv-title-input:focus ~ .cv-title-input-label {
+    border-color: #3d5af1;
+}
+
+.cv-title-input {
+    background-color: none;
+    border: 0;
+    caret-color: #3d5af1;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 9;
+    pointer-events: none;
+}
+
+.cv-title-input:focus {
+    outline: 0;
+}

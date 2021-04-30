@@ -1,0 +1,132 @@
+body {
+    overflow-x: hidden;
+    background-color: #fafafa;
+}
+.templates-provider-container {
+width: 100vw;
+height: 100vh;
+position: relative;
+left: 1%;
+}
+.templates-plane {
+    width: 180%;
+    height: 100%;
+    position: absolute;
+    transform: translateX(-50%);
+    transition: left .2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+.template-holder {
+    width: 60%;
+    height: 100%;
+    position: absolute;
+}
+.template {
+    position: absolute;
+    width: 30%;
+    height: 80%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    background-size: cover;
+    background-position: top;
+    border-radius: 12px;
+    box-shadow: 0 3px 6px rgba(0,0,0,.16);
+    transition: height .2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+    transition-delay: .1s;
+}
+
+.template-1 {
+    left: 25%;
+}
+.template-2 {
+    left: 47%;
+}
+.template-3 {
+    left: 69%;
+}
+.active {
+    height: 90%;
+}
+
+.templates-control {
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    background-color: #3D5AF1;
+    border-radius: 100%;
+    top: 50%;
+    z-index: 100;
+    box-shadow: 0 3px 6px rgba(0,0,0,.16);
+    transition: transform .1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.templates-control:hover {
+    cursor: pointer;
+}
+.templates-control:hover i,
+.templates-control:focus i {
+    transform: scale(1.5);
+}
+.templates-control-left:active i {
+    transform: translateX(-6px) scale(1.25);
+}
+.templates-control-right:active i {
+    transform: translateX(6px) scale(1.25);
+}
+.templates-control i {
+    z-index: 101;
+}
+.templates-control-left {
+    left: 10px;
+}
+.templates-control-right {
+    right: 10px;
+}
+.template-selector {
+    position: absolute;
+    bottom: 10%;
+    opacity: 1;
+    transform: translateX(-50%);
+    left: 50%;
+    z-index: 1000;
+    background-color: #3D5AF1;
+    padding: 7px 18px;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 20px;
+    box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3), 0 2px 6px 2px rgba(60, 64, 67, 0.15);
+    font-family: 'Airbnb Cereal App Medium', 'Gilroy', sans-serif;
+    transition: transform .1s cubic-bezier(0.6, 0.04, 0.98, 0.335) bottom .1s cubic-bezier(0.6, 0.04, 0.98, 0.335);
+}
+
+@media screen and (max-width: 550px) {
+    .template {
+        width: 80%;
+    }
+    .template-1 {
+        left: -3%;
+    }
+    .template-3 {
+        left: 97%;
+    }
+    .template-selector {
+        font-size: 14px;
+    }
+}
+.template-selector:hover {
+    cursor: pointer;
+    transform: translatex(-50%) scale(1.05);
+}
+
+.template-selector:active {
+    transform: translatex(-50%) scale(1);
+}
+.selector-active {
+    bottom: 10%;
+    opacity: 1;
+
+}
